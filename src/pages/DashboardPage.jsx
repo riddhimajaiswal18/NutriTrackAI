@@ -9,7 +9,7 @@ import CircularProgress from "../components/common/CircularProgress";
 import ProgressBar from "../components/common/ProgressBar";
 import Button from "../components/common/Button";
 import Loader from "../components/common/Loader";
-import { getGreeting, formatDisplayDate } from "../utils/formatters";
+import { getGreeting, formatDisplayDate } from "../context/utils/formatters";
 import {
   Plus, Flame, Beef, Wheat, Droplets, Trash2, Lightbulb, TrendingUp, UtensilsCrossed,
 } from "lucide-react";

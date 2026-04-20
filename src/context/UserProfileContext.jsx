@@ -5,7 +5,7 @@ import {
   createUserProfile,
   updateUserProfile as updateProfileService,
 } from "../services/firestoreService";
-import { calculateDailyTargets, calculateBMI, getBMICategory } from "../utils/nutritionCalc";
+import { calculateDailyTargets, calculateBMI, getBMICategory } from "./utils/nutritionCalc";
 
 const UserProfileContext = createContext(null);
 

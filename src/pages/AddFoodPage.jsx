@@ -2,7 +2,7 @@ import { useState, useMemo, useCallback, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useFoodLog } from "../context/FoodLogContext";
 import useDebounce from "../hooks/useDebounce";
-import { searchFoods, calculateNutrition, getCategories, getFoodsByCategory } from "../utils/foodDatabase";
+import { searchFoods, calculateNutrition, getCategories, getFoodsByCategory } from "../context/utils/foodDatabase";
 import Card from "../components/common/Card";
 import Button from "../components/common/Button";
 import {

@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 import { useUserProfile } from "../context/UserProfileContext";
 import { useFoodLog } from "../context/FoodLogContext";
-import { getProgressPercentage, getProgressColor } from "../utils/nutritionCalc";
-import { getProteinSuggestions } from "../utils/foodDatabase";
+import { getProgressPercentage, getProgressColor } from "../context/utils/nutritionCalc";
+import { getProteinSuggestions } from "../context/utils/foodDatabase";
 
 /**
  * Hook that computes nutrition insights by comparing daily intake vs targets

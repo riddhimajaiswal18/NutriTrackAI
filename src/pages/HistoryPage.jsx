@@ -3,7 +3,7 @@ import { useFoodLog } from "../context/FoodLogContext";
 import Card from "../components/common/Card";
 import Button from "../components/common/Button";
 import Loader from "../components/common/Loader";
-import { formatDate, formatDisplayDate } from "../utils/formatters";
+import { formatDate, formatDisplayDate } from "../context/utils/formatters";
 import { Trash2, ChevronLeft, ChevronRight, Calendar } from "lucide-react";
 import "./HistoryPage.css";
 

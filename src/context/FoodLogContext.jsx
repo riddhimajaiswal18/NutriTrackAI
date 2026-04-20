@@ -14,7 +14,7 @@ import {
   updateFoodLog as updateLogService,
   getWeeklyFoodLogs as getWeeklyService,
 } from "../services/firestoreService";
-import { formatDate } from "../utils/formatters";
+import { formatDate } from "./utils/formatters";
 
 const FoodLogContext = createContext(null);
 

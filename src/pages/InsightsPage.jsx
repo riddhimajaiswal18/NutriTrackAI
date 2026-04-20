@@ -4,7 +4,7 @@ import { useUserProfile } from "../context/UserProfileContext";
 import Card from "../components/common/Card";
 import Loader from "../components/common/Loader";
 import ProgressBar from "../components/common/ProgressBar";
-import { getLastNDays, getShortDay } from "../utils/formatters";
+import { getLastNDays, getShortDay } from "../context/utils/formatters";
 import {
   BarChart3, TrendingUp, TrendingDown, AlertTriangle, Award, Target,
 } from "lucide-react";

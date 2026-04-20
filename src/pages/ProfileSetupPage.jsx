@@ -4,7 +4,7 @@ import { useUserProfile } from "../context/UserProfileContext";
 import { useAuth } from "../context/AuthContext";
 import Card from "../components/common/Card";
 import Button from "../components/common/Button";
-import { calculateBMI, getBMICategory, calculateDailyTargets } from "../utils/nutritionCalc";
+import { calculateBMI, getBMICategory, calculateDailyTargets } from "../context/utils/nutritionCalc";
 import {
   User, Ruler, Weight, Activity, Target, ChevronRight, ChevronLeft, Check, Zap
 } from "lucide-react";

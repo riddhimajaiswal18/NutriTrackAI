@@ -44,7 +44,7 @@ export const updateUserProfile = async (uid, data) => {
 
 // ─── Food Logs ──────────────────────────────────────────────
 
-// ✅ Use Timestamp.now() (NOT serverTimestamp)
+//  Use Timestamp.now() (NOT serverTimestamp)
 export const addFoodLog = async (uid, entry) => {
   const logsRef = collection(db, "users", uid, "foodLogs");
 
@@ -56,7 +56,7 @@ export const addFoodLog = async (uid, entry) => {
   return docRef.id;
 };
 
-// ✅ Correct per-day query (timestamp range)
+//  Correct per-day query (timestamp range)
 export const getFoodLogsByDate = async (uid, dateStr) => {
   const logsRef = collection(db, "users", uid, "foodLogs");
 
@@ -74,7 +74,7 @@ export const getFoodLogsByDate = async (uid, dateStr) => {
   return snap.docs.map((d) => ({ id: d.id, ...d.data() }));
 };
 
-// ✅ Weekly query (fixed)
+// Weekly query
 export const getWeeklyFoodLogs = async (uid) => {
   const logsRef = collection(db, "users", uid, "foodLogs");
 
