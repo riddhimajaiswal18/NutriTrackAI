@@ -1,0 +1,310 @@
+/* ─── Profile Setup Page ─────────────────────────────────── */
+
+.profile-setup {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.profile-setup-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.profile-setup-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.profile-setup-subtitle {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-base);
+}
+
+/* Steps */
+.profile-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.profile-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.profile-step-dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  background: var(--bg-glass);
+  border: 2px solid var(--border-color);
+  color: var(--text-tertiary);
+  transition: all var(--transition-base);
+}
+
+.profile-step-active .profile-step-dot {
+  background: var(--gradient-primary);
+  border-color: var(--accent-primary);
+  color: white;
+  box-shadow: var(--shadow-glow);
+}
+
+.profile-step-done .profile-step-dot {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: white;
+}
+
+.profile-step-label {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.profile-step-active .profile-step-label {
+  color: var(--accent-primary);
+}
+
+.profile-step-done .profile-step-label {
+  color: var(--text-secondary);
+}
+
+/* Form Card */
+.profile-form-card {
+  margin-bottom: var(--space-8);
+}
+
+.profile-form-step-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.profile-form-step-header h2 {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+}
+
+.profile-form-step-icon {
+  color: var(--accent-primary);
+}
+
+.profile-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.form-group-full {
+  grid-column: 1 / -1;
+}
+
+/* Gender Picker */
+.profile-gender-picker {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.profile-gender-btn {
+  flex: 1;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-glass);
+  color: var(--text-secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.profile-gender-btn:hover {
+  border-color: var(--border-color-light);
+}
+
+.profile-gender-btn-active {
+  border-color: var(--accent-primary);
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--accent-primary);
+}
+
+/* Activity Cards */
+.profile-activity-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.profile-activity-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-glass);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  font-family: var(--font-family);
+}
+
+.profile-activity-card:hover {
+  border-color: var(--border-color-light);
+  background: var(--bg-glass-hover);
+}
+
+.profile-activity-card-active {
+  border-color: var(--accent-primary);
+  background: rgba(16, 185, 129, 0.1);
+  box-shadow: var(--shadow-glow);
+}
+
+.profile-activity-emoji {
+  font-size: 2rem;
+}
+
+.profile-activity-label {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: var(--font-size-sm);
+}
+
+.profile-activity-desc {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  text-align: center;
+}
+
+/* Goal Cards */
+.profile-goal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.profile-goal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-glass);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  font-family: var(--font-family);
+}
+
+.profile-goal-card:hover {
+  border-color: var(--border-color-light);
+}
+
+.profile-goal-card-active {
+  border-color: var(--accent-primary);
+  background: rgba(16, 185, 129, 0.1);
+  box-shadow: var(--shadow-glow);
+}
+
+.profile-goal-emoji { font-size: 1.8rem; }
+.profile-goal-label { font-weight: 600; color: var(--text-primary); font-size: var(--font-size-sm); }
+.profile-goal-desc { font-size: var(--font-size-xs); color: var(--text-tertiary); text-align: center; }
+
+/* BMI Card */
+.profile-bmi-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  border-radius: var(--border-radius-md);
+  background: var(--bg-glass);
+  border: 1px solid var(--border-color);
+}
+
+.profile-bmi-label {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+}
+
+.profile-bmi-value {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+}
+
+.profile-bmi-category {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+}
+
+/* Targets Preview */
+.profile-targets-preview {
+  padding: var(--space-5);
+  border-radius: var(--border-radius-md);
+  background: var(--gradient-card);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.profile-targets-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  font-weight: 600;
+  color: var(--accent-primary);
+  font-size: var(--font-size-sm);
+}
+
+.profile-targets-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+}
+
+.profile-target-item {
+  text-align: center;
+}
+
+.profile-target-value {
+  display: block;
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
+.profile-target-label {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+}
+
+/* Navigation */
+.profile-form-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 480px) {
+  .profile-steps { gap: var(--space-4); }
+  .profile-form-grid { grid-template-columns: 1fr; }
+  .profile-goal-grid { grid-template-columns: 1fr; }
+  .profile-activity-grid { grid-template-columns: 1fr; }
+  .profile-targets-grid { grid-template-columns: repeat(2, 1fr); }
+}

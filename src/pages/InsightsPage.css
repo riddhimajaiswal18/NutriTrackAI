@@ -1,0 +1,129 @@
+/* ─── Insights Page ──────────────────────────────────────── */
+
+.insights-page {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.insights-header h1 {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  margin-bottom: var(--space-1);
+}
+
+.insights-subtitle {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+}
+
+/* Stats Row */
+.insights-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.insights-stat-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.insights-stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.insights-stat-value {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.insights-stat-label {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+/* Chart */
+.insights-chart-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.insights-chart-header h2 {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+}
+
+.insights-chart-icon {
+  color: var(--accent-primary);
+}
+
+/* Averages */
+.insights-section-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.insights-avg-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* Deficiencies */
+.insights-deficiency-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.insights-deficiency-card {
+  border-left: 3px solid var(--color-warning);
+}
+
+.insights-deficiency-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.insights-deficiency-content p {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+/* Empty State */
+.insights-empty-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.insights-empty-emoji { font-size: 3rem; }
+.insights-empty-content h3 { color: var(--text-primary); }
+.insights-empty-content p { color: var(--text-tertiary); font-size: var(--font-size-sm); }
+
+@media (max-width: 640px) {
+  .insights-stats { grid-template-columns: 1fr; }
+}
