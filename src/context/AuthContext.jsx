@@ -3,7 +3,6 @@ import { onAuthChange } from "../services/authService";
 import {
   signUp as authSignUp,
   signIn as authSignIn,
-  signInWithGoogle as authGoogle,
   logout as authLogout,
 } from "../services/authService";
 
@@ -35,10 +34,6 @@ export const AuthProvider = ({ children }) => {
     return await authSignIn(email, password);
   };
 
-  const loginWithGoogle = async () => {
-    return await authGoogle();
-  };
-
   const logout = async () => {
     await authLogout();
   };
@@ -48,7 +43,6 @@ export const AuthProvider = ({ children }) => {
     loading,
     signup,
     login,
-    loginWithGoogle,
     logout,
   };
 
